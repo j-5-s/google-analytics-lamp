@@ -1,0 +1,27 @@
+<h3>From Red to Green</h3>
+Over the past 30 days
+the minimum <span class="color-text" style="color:rgb(255,0,0);"><%= min%></span> and maximum
+<span class="color-text" style="color:rgb(0,255,0);"><%= max %></span>
+visits from your Google Analytics account determine a high and low
+to control the color of the LED. The current value
+<span class="color-text" style="color:rgb(<%=todayColor.red%>,<%= todayColor.green %>,0)"><%= todayCount %></span>
+is todays visit count and its cooresponding color is handicapped by the
+hour of the day.
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Visits</th>
+    <th>Color</th>
+  </tr>
+</thead>
+<tbody>
+  <% for (var i = 0; i < entries.length; i++) {%>
+    <tr>
+      <td><%= entries[i].date %></td>
+      <td><%= entries[i].visits %></td>
+      <td><span class="color" style="background-color:rgb(<%= entries[i].color.red %>, <%= entries[i].color.green %>,0)"></span></td>
+    </tr>
+  <% } %>
+</tbody>
+</table>

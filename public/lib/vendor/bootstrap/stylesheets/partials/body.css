@@ -1,0 +1,62 @@
+/* line 1, ../../sass/partials/body.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 5, ../../sass/partials/body.scss */
+.color {
+  padding: 0 4px;
+  width: 50px;
+  height: 15px;
+  margin: 0;
+  display: inline-block;
+}
+
+/* line 13, ../../sass/partials/body.scss */
+.color-text {
+  border: 1px solid #ccc;
+  padding: 0 2px;
+  background-color: #f9f9f9;
+}
+
+/* line 19, ../../sass/partials/body.scss */
+.right {
+  float: right;
+}
+
+/* line 23, ../../sass/partials/body.scss */
+.simple-nav {
+  float: right;
+  list-style-type: none;
+  margin-top: -30px;
+}
+
+/* line 28, ../../sass/partials/body.scss */
+.simple-nav li {
+  float: left;
+}
+
+/* line 32, ../../sass/partials/body.scss */
+.simple-nav li a {
+  padding: 0 5px;
+}
+
+/* line 36, ../../sass/partials/body.scss */
+.off {
+  color: red;
+}
+
+/* line 40, ../../sass/partials/body.scss */
+.hidden {
+  display: none;
+}
+
+/* line 44, ../../sass/partials/body.scss */
+input.error {
+  border: 1px solid #ff0000;
+}
+
+/* line 48, ../../sass/partials/body.scss */
+label.error {
+  color: #ff0000;
+}

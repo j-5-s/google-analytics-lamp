@@ -1,0 +1,19 @@
+{
+  "author": "James Charlesworth <james.charlesworth@gmail.com>",
+  "name": "noduino",
+  "description": "Arduino framework for fuck*ng mad scientists",
+  "version": "0.0.2",
+  "main": "noduino.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jamescharlesworth/noduino.git"
+  },
+  "dependencies": {
+    "serialport": "*",
+    "colors": "*",
+    "kickstart": "*",    
+    "socket.io": "*",
+    "requirejs": "*"
+  }
+}

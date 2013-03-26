@@ -1,0 +1,55 @@
+
+<h3>App Overview</h3>
+<p>
+  Built on Node.js, this app uses the Google Analytics API
+  to fetch your data and converts visits into a color
+  somewhere between red and green and powers an LED.
+  Connecting an Arduino to Google Analytics is not as hard as it may
+  seem thanks to the wonderful noduino library created by semu.
+</p>
+<h4>What you will need</h4>
+<div class="well well-small">
+  <h5>Hardware</h5>
+  <ul>
+    <li>Arduino Board</li>
+    <li>Wires</li>
+    <li>Raspberry Pi</li>
+    <li>PowerSSR</li>
+  </ul>
+  <h5>Software</h5>
+  <ul>
+    <li>Node.js (I'm using v0.8.11)</li>
+    <li>Arduino .ino</li>
+  </ul>
+</div>
+<h4>Setup</h4>
+<p>Follow the diagram below to connect the LED to pins 9...</p>
+ <div class="well well-small">
+   <form method="post" onsubmit="return false;" id="profile" action="/api/account">
+          <legend>Update Account Info</legend>
+          <span class="help-block">Adding account data is necessary to allow the lamp to sync with Google Analytics.</span>
+          <label>Google Analytics User ID</label>
+          <input type="text" placeholder="Account ID..." class="required" name="account_id" value="<%= account_id %>">
+
+
+          <label>Password</label>
+          <input type="password" placeholder="" class="required" name="password" value="<%= password %>">
+
+          <label>Profile ID</label>
+          <input type="text" placeholder="Profile ID..." class="required" name="profile_id" value="<%= account_id %>">
+          <br/>
+
+          <!--<button type="submit" id="save-profile" class="btn">Save</button>-->
+          <button type="submit" id="submit-profile" class="btn btn-primary">Submit</button>
+          <hr />
+          <span class="help-block">This data is saved locally in the application in ./private/account.json.</span>
+   </form>
+ </div>
+<h4>Credits</h4>
+
+<hr />
+<p>
+  Special thanks to @semu for creating the Noduino project on github.
+  Now what? You've created a lamp, go out and light it up.
+</p>
+
