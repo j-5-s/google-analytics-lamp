@@ -12,6 +12,7 @@ define(['jQuery',
 
     },
     events: {
+      'submit #toggle': 'submitToggle'
     },
     render: function() {
       var tempVars = {
@@ -41,6 +42,22 @@ define(['jQuery',
 
         }
       });
+    },
+    submitToggle: function(e) {
+      var curStatus = parseInt($('#status').val(),10),
+          url = '/api/toggle/' + ((curStatus === 1) ? 'off' : 'on');
+      $.ajax({
+        url: url,
+        type: 'POST',
+        dataType: 'JSON'
+      }).done(function(res){
+        if (curStatus === 1) {
+          $("#status").val('0')
+        } else {
+          $("#status").val('1')
+        }
+
+      })
     }
 
   });

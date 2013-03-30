@@ -48,7 +48,7 @@ app.get('/api/entries', api.entries);
 app.get('/api/verify', api.verify);
 app.get('/api/account', api.getAccount);
 app.post('/api/account', api.account);
-app.post('/api/toggle/:status', api.toggle);
+app.post('/api/toggle/:status', routes.toggle);
 app.post('/api/test/:r/:g', api.test);
 
 

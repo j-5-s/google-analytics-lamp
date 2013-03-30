@@ -45,6 +45,14 @@
           <span class="help-block">This data is saved locally in the application in ./private/account.json.</span>
    </form>
  </div>
+
+ <div class="well well-small">
+  <form method="post" onsubmit="return false" id="toggle" action="/apt/toggle">
+    <input type="hidden" name="status" id="status" value="1" />
+    <button type="submit" class="btn btn-primary" name="toggle" >Toggle On / Off </button>
+  </form>
+
+ </div>
 <h4>Credits</h4>
 
 <hr />
